@@ -1,11 +1,13 @@
 services:
   db:
+    container_name: django-db
     image: postgres
     environment:
       POSTGRES_DB: mydb
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
   web:
+    container_name: django-web
     build: .
     command: python manage.py runserver 0.0.0.0:8000
     volumes:
