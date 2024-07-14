@@ -3,7 +3,7 @@ services:
     container_name: django-db
     image: postgres
     environment:
-      POSTGRES_DB: mydb
+      POSTGRES_DB: polls_db
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
   web:
@@ -15,7 +15,7 @@ services:
     ports:
       - "8000:8000"
     environment:
-      POSTGRES_DB: mydb
+      POSTGRES_DB: polls_db
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
     depends_on:
