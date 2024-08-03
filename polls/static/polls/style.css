@@ -1,0 +1,10 @@
+body {
+    /*background: white url("images/bg.jpg") no-repeat;*/
+    background: rgb(189, 188, 188) no-repeat;
+
+}
+li a {
+    color: green;
+    font-family: monospace;
+    font-size: large;
+}
